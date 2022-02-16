@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="../fontawesome/css/all.css">
     <link rel="stylesheet" href="css/index.css">
@@ -17,20 +18,103 @@
             <a href="#">Activités</a>
         </nav>
     </header>
-    <section>
-        <p>
+    <div>
+        <div>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <span>En plein centre ville ou en pleine nature</span>
-        </p>
+            <span class="description">En plein centre ville ou en pleine nature</span>
+        </div>
            
-        <form action="">
+        <form action="rechercher.html">
             <p>
-                <i class="fa-solid fa-location-dot" ></i>
-                <input  class="rechercher_input" type="text" name="place" placeholder="Marseille, France">
+                <span class="map-dot"><i class="fa-solid fa-location-dot" ></i></span>
+                <input  class="rechercher_input" type="search" name="place" placeholder="Marseille, France">
                 <button class="rechercher_boutton_full">Rechercher</button>
                 <button class="rechercher_boutton_small"><i class="fa-solid fa-magnifying-glass"></i></button>
             </p>
         </form>
-    </section>
+    </div>
+    <div>
+        <p class="section2">
+            <span class="section2-content">Filtres</span>
+            <span class="section2-element"><i class="fa-solid fa-money-bill-wave"></i><span class="section2-content">Economique</span></span>
+            <span class="section2-element"><i class="fa-solid fa-universal-access"></i><span class="section2-content">Familial</span></span>
+            <span class="section2-element"><i class="fa-solid fa-heart"></i><span class="section2-content">Romantique</span></span>
+            <span class="section2-element"><i class="fa-solid fa-dog"></i><span class="section2-content">Animaux autorisés</span></span>
+        </p>
+        <p>
+            <span><i class="fa-solid fa-circle-info"></i><span class="description">Plus de 500 logements sont disponibles dans cette ville</span></span>
+        </p>
+    </div>
+    <div class="section3">
+        <h2>Hébergements à Marseille</h2>
+        <div class="sous-section3-1">
+            <button class="section3-1-element">
+                <span class="section3-img">
+                    <img src="assets/images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la cannebierre">
+                </span>
+                <span><b>Auberge La Cannebière </b></span>
+                <span>Nuit à partir de <b>25£</b> </span>
+                <span class="section3-1stars">
+                    <i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-b"></i>
+                </span>
+            </button>
+            <button class="section3-1-element">
+                <span class="section3-img">
+                    <img src="assets/images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="auberge la cannebierre">
+                </span>
+                <span><b> Hôtel du port</b></span>
+                <span>Nuit à partir de <b>25£</b> </span>
+                <span class="section3-1stars">
+                    <i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i>
+                </span>
+            </button>
+            <button class="section3-1-element">
+                <span class="section3-img">
+                    <img src="assets/images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="auberge la cannebierre">
+                </span>
+                <span><b>Hôtel Les mouettes</b></span>
+                <span>Nuit à partir de <b>25£</b> </span>
+                <span class="section3-1stars">
+                    <i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-b"></i>
+                </span>
+            </button>
+        </div>
+        <div class="sous-section3-1">
+            <button class="section3-1-element">
+                <span class="section3-img">
+                    <img src="assets/images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="auberge la cannebierre">
+                </span>
+                <span><b>Hôtel de la mer</b></span>
+                <span>Nuit à partir de <b>25£</b> </span>
+                <span class="section3-1stars">
+                    <i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-b"></i><i class="fa-solid fa-star star-b"></i>
+                </span>
+                
+            </button>
+            <button class="section3-1-element">
+                <span class="section3-img">
+                    <img src="assets/images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge la cannebierre">
+                </span>
+                <span><b>Auberge Le Panier</b></span>
+                <span>Nuit à partir de <b>25£</b> </span>
+                <span class="section3-1stars">
+                    <i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-b"></i>
+                </span>
+            </button>
+            <button class="section3-1-element">
+                <span class="section3-img">
+                    <img src="assets/images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="auberge la cannebierre">
+                </span>
+                <span><b>Hôtel chez Amina</b></span>
+                <span>Nuit à partir de <b>25£</b> </span>
+                <span class="section3-1stars">
+                    <i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i><i class="fa-solid fa-star star-a"></i>
+                </span>
+            </button>
+        </div>
+        <div>
+            <p>Afficher plus</p>
+        </div>
+    </div>
 </body>
 </html>

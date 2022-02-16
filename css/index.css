@@ -17,39 +17,158 @@ h1 {
 }
 
 a {
-    padding: 3%;
+    padding: 5%;
     color: black;
     text-decoration: none;
 }
 
-span {
+.description {
     opacity: 0.5;
 }
 
-.rechercher_input {
-    height: 40px;
-    margin-right: 0%;
+.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
 }
 
-.rechercher_icone {
-    background-color: grey;
-    height: 40px;
-    width: 40px;
+.section2-element {
+    margin: 5px;
+    border: solid;
+    border-width: 2px;
+    border-color: #F2F2F2;
+    border-radius: 100px;
+}
+
+.section2-element:hover {
+    background-color: #F2F2F2;
+}
+
+.section2-content {
+    margin-left: 10px;
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+.fa-money-bill-wave {
+    color: #0065FC;
+    padding: 10px;
+    align-self: center;
+    border-radius: 100px;
+    background-color: #DEEBFF;
+}
+
+.fa-universal-access {
+    color: #0065FC;
+    padding: 10px;
+    align-self: center;
+    border-radius: 100px;
+    background-color: #DEEBFF;
+}
+
+.fa-heart {
+    color: #0065FC;
+    padding: 10px;
+    align-self: center;
+    border-radius: 100px;
+    background-color: #DEEBFF;
+}
+
+.fa-dog {
+    color: #0065FC;
+    padding: 10px;
+    align-self: center;
+    border-radius: 100px;
+    background-color: #DEEBFF;
+}
+
+.fa-circle-info {
+    color: #0065FC;
+    margin-right: 10px;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sous-section3-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0%;
+    margin: 10px;
+}
+
+.section3-1-element {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 200px;
+    height: 150px;
+    padding: 3px;
+    border: none;
+    border-color: white;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px #999;
+}
+
+.section3-img {
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    margin: 0.1px;
+}
+
+.section3-img img{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+.section3-1-element:hover {
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+
+.section3-1stars {
+    display: flex;
+    flex-direction: row;
+}
+
+.star-a {
+    color: #0065FC;
+}
+
+.star-b {
+    color: gray;
 }
 
 @media screen and (min-width: 992px)
 {
-   
+    img {
+        width: 100px;
+    }
     a:hover {
         border-top: solid #0065FC;
         color: #0065FC;
-    }header {
+    }
+    header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
     nav {
-        width: auto;
+        width: 250px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -58,10 +177,26 @@ span {
         width: 400px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
     .logo_small {
         display: none;
+    }
+    input {
+        height: 40px;
+        margin-left: 0%;
+        margin-right: 0%;
+        border-style: ridge;
+        border-left: none;
+        border-right: none;
+        border-top-color: #DEEBFF;
+        border-bottom-color: #DEEBFF;
+    }
+    .fa-location-dot {
+        float: left;
+        background-color: #DEEBFF;
+        padding: 12px;
+        border-top-left-radius: 10px;
+        border-end-start-radius: 10px;
     }
     .rechercher_boutton_full {
         background-color: #0065FC;
@@ -70,7 +205,7 @@ span {
         border-end-end-radius: 10px;
         border-top-right-radius: 10px;
         border: none;
-        margin-left: 0%;
+        float: right;
     }
     .rechercher_boutton_small {
         display: none;
@@ -80,11 +215,14 @@ span {
 
 @media screen and (min-width: 768px) and (max-width: 991px)
 {
-    
+    img {
+        width: 100px;
+    }
     a:hover {
         border-top: solid #0065FC;
         color: #0065FC;
-    }header {
+    }
+    header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -99,10 +237,24 @@ span {
         width: 400px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
     .logo_small {
         display: none;
+    }
+    input {
+        height: 40px;
+        margin-left: 0%;
+        margin-right: 0%;
+        border-left: none;
+        border-right: none;
+        border-color: #DEEBFF;
+    }
+    .fa-location-dot {
+        float: left;
+        background-color: #DEEBFF;
+        padding: 12px;
+        border-top-left-radius: 10px;
+        border-end-start-radius: 10px;
     }
     .rechercher_boutton_full {
         background-color: #0065FC;
@@ -112,6 +264,7 @@ span {
         border-top-right-radius: 10px;
         border: none;
         margin-left: 0%;
+        float: right;
     }
     .rechercher_boutton_small {
         display: none;
@@ -123,6 +276,7 @@ span {
 {
     img {
         width: 100px;
+        align-self: center;
     }
     a:hover {
         border-bottom: solid #0065FC;
@@ -135,6 +289,8 @@ span {
     }
     nav {
         width: auto;
+        margin-left: 0%;
+        margin-right: 0%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -143,12 +299,30 @@ span {
         width: auto;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        position: relative;
     }
     .logo_full {
         display: none;
     }
+    input {
+        z-index: 0;
+        height: 40px;
+        position: absolute;
+        margin-left: 0%;
+        margin-right: 0%;
+        border-left: none;
+        border-right: none;
+        border-color: #DEEBFF;
+    }
+    .fa-location-dot {
+        float: left;
+        background-color: #DEEBFF;
+        padding: 12px;
+        border-top-left-radius: 10px;
+        border-end-start-radius: 10px;
+    }
     .rechercher_boutton_small {
+        z-index: 1;
         background-color: #0065FC;
         color: white;
         height: 40px;
@@ -158,10 +332,27 @@ span {
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
         border: none;
-        margin-left: 0%;
+        position: relative;
+        margin-left: 170px;
+        float: right;
     }
     .rechercher_boutton_full {
         display: none;
+    }
+    .section3 {
+        width: 100%;
+    }
+    .sous-section3-1 {
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .section3-1-element {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
 }
